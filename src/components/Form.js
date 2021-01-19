@@ -35,26 +35,27 @@ class Form extends Component {
   };
 
   render() {
+    const { username, comments, topic } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
           <label> Username</label>
           <input
             type="text"
-            value={this.state.username}
+            value={username}
             onChange={this.handleUsernameChange}
           />
         </div>
         <div>
           <label> Comments</label>
           <textarea
-            value={this.state.comments}
+            value={comments}
             onChange={this.handleCommentChange}
           ></textarea>
         </div>
         <div>
           <label>Topic</label>
-          <select value={this.state.topic} onchange={this.handleTopicChange}>
+          <select value={topic} onchange={this.handleTopicChange}>
             <option valuue="react"> React</option>
             <option valuue="angular"> Angular</option>
             <option valuue="vue"> Vue</option>
