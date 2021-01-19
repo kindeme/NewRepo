@@ -11,12 +11,14 @@ import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import StyleSheet from "./components/StyleSheet";
-//import FunctionClick from "./components/FunctionClick";
+import FunctionClick from "./components/FunctionClick";
+import Form from "./components/Form";
 
 function App() {
   return (
     <div className="App">
-      <StyleSheet primary={true} />
+      <Form />
+      {/* <StyleSheet primary={true} /> */}
       {/* <NameList /> */}
       {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
