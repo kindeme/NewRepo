@@ -1,46 +1,11 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import Greet from "./components/Greet";
-import Welcome from "./components/Welcome";
-import Hello from "./components/Hello";
-import Message from "./components/Message";
-import Counter from "./components/Counter";
-import ClassClick from "./components/ClassClick";
-import EventBind from "./components/EventBind";
-import ParentComponent from "./components/ParentComponent";
-import UserGreeting from "./components/UserGreeting";
-import NameList from "./components/NameList";
-import StyleSheet from "./components/StyleSheet";
-import FunctionClick from "./components/FunctionClick";
-import Form from "./components/Form";
+import ClassCounter from "./components/ClassCounter";
 
 function App() {
   return (
     <div className="App">
-      <Form />
-      {/* <StyleSheet primary={true} /> */}
-      {/* <NameList /> */}
-      {/* <UserGreeting /> */}
-      {/* <ParentComponent /> */}
-      {/* <EventBind /> */}
-
-      {/* <ClassClick /> */}
-      {/* <FunctionClick /> */}
-      {/* <Counter /> */}
-      {/* <Message /> */}
-      {/* <Greet name="Ryan" heroName="Batman">
-        <p> this is children props</p>
-      </Greet>
-      <Greet name="Tiffany" heroName="super women">
-        <button>Action</button>
-      </Greet> */}
-      {/* <Greet name="Hillary" heroName="wonder women" />
-
-      <Welcome name="Ryan" heroName="Batman" /> */}
-      {/* <Welcome name="Tiffany" heroName="super women" />
-      <Welcome name="Hillary" heroName="wonder women" /> */}
-
-      {/* <Hello /> */}
+      <ClassCounter />
     </div>
   );
 }
