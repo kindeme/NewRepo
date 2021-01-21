@@ -6,11 +6,12 @@ import HookCounterFour from "./components/HookCounterFour";
 import HookCounterOne from "./components/HookCounterOne";
 import HookCounterThree from "./components/HookCounterThree";
 import HookCounterTwo from "./components/HookCounterTwo";
+import MouseContainer from "./components/MouseContainer";
 
 function App() {
   return (
     <div className="App">
-      <HookCounterOne />
+      <MouseContainer />
     </div>
   );
 }
