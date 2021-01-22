@@ -19,7 +19,7 @@ class RefsDemo extends Component {
     return (
       <div>
         <input type="text" ref={this.inputref} />
-        <button onClick={clickHandler}></button>
+        <button onClick={this.clickHandler}></button>
       </div>
     );
   }
