@@ -10,6 +10,7 @@ function DataFetching() {
   /// fetching agle element from api
   const [post, setPost] = useState({});
   const [id, setId] = useState(1);
+  const [idFromButtonClick, setIdFromButtonClick] = useState(1);
 
   useEffect(() => {
     axios
@@ -21,11 +22,19 @@ function DataFetching() {
       .catch((err) => {
         console.log(err);
       });
-  }, [id]);
+  }, [idFromButtonClick]);
+
+  const handleClick = () => {
+    setIdFromButtonClick(id);
+  };
+
   return (
     <div>
       {/* Fetch a sinlge element  */}
       <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+      <button type="button" onClick={handleClick}>
+        Fetch Post
+      </button>
       <br />
       {post.title}
       {/* <ul>
